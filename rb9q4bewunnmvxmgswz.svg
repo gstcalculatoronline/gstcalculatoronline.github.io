@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Background Container -->
+  <rect width="512" height="512" rx="112" fill="#0D6EFD"/>
+
+  <!-- Calculator Display Screen -->
+
+  <rect x="96" y="96" width="320" height="96" rx="20" fill="#FFFFFF" opacity="0.95"/>
+
+  <!-- Display Screen Lines / Text Placeholders -->
+
+  <rect x="128" y="132" width="160" height="24" rx="6" fill="#0D6EFD" opacity="0.3"/>
+  <rect x="336" y="128" width="48" height="32" rx="6" fill="#198754"/>
+
+  <!-- Calculator Keypad Grid -->
+
+  <!-- Row 1 -->
+
+  <rect x="96" y="232" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="181" y="232" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="266" y="232" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="352" y="232" width="64" height="64" rx="16" fill="#FFFFFF" opacity="0.8"/>
+
+  <!-- Row 2 -->
+
+  <rect x="96" y="317" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="181" y="317" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="266" y="317" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="352" y="317" width="64" height="64" rx="16" fill="#198754"/>
+
+  <!-- Row 3 -->
+
+  <rect x="96" y="402" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="181" y="402" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="266" y="402" width="64" height="64" rx="16" fill="#FFFFFF"/>
+  <rect x="352" y="402" width="64" height="64" rx="16" fill="#198754"/>
+</svg>
+ 
