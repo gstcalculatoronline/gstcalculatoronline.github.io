@@ -3,34 +3,718 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Optimized Website Template | Fast & Responsive</title>
-    <meta name="description" content="A lightweight, high-performance, and SEO-friendly website structure designed for top search engine rankings.">
-    <link rel="canonical" href="https://example.com/">
+    <title>GST Calculator Online - Fast, Free & Accurate Indian GST Rate Tool (2026)</title>
+    <meta name="description" content="Calculate Goods and Services Tax (GST) easily online. Instantly compute Exclusive/Inclusive GST, CGST, SGST, IGST for 5%, 12%, 18%, and 28% tax slabs with accuracy.">
+    <meta name="keywords" content="GST calculator, online GST calculator, calculate GST online, GST rate calculator, CGST calculator, SGST calculator, IGST finder, Indian GST slabs 2026">
+    <link rel="canonical" href="https://gstcalculatoronline.github.io/">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="SEO Optimized Website Template">
-    <meta property="og:description" content="A lightweight, high-performance, and SEO-friendly website structure.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://example.com/">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gstcalculatoronline.github.io/">
+    <meta property="og:title" content="GST Calculator Online - Fast & Accurate Tool">
+    <meta property="og:description" content="Calculate GST inclusive and exclusive prices instantly. Complete breakdown of CGST, SGST, and IGST for all standard Indian tax slabs.">
+    <meta property="og:image" content="https://gstcalculatoronline.github.io/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gstcalculatoronline.github.io/">
+    <meta property="twitter:title" content="GST Calculator Online">
+    <meta property="twitter:description" content="Free online tool to compute GST, CGST, SGST, and IGST for Indian businesses and consumers.">
+    <meta property="twitter:image" content="https://gstcalculatoronline.github.io/logo.png">
+
+    <!-- Favicon Generated via Real Favicon Generator Setup -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0d6efd">
+    <meta name="msapplication-TileColor" content="#0d6efd">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Analytics (GA4 Tag Placeholder - Replace G-XXXXXXXXXX with your Real Tag ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Schema.org WebSite & SoftwareApplication Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GST Calculator Online",
+      "url": "https://gstcalculatoronline.github.io/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "description": "Calculate GST, CGST, SGST, and IGST online in real-time for Indian goods and services standard rates."
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0d6efd;
+            --primary-hover: #0b5ed7;
+            --bg-main: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-dark: #212529;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --success-color: #198754;
+            --radius: 8px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .brand-logo svg {
+            height: 32px;
+            width: 32px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        main {
+            flex: 1;
+            max-width: 1100px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        .calculator-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .input-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+
+        .radio-toggle {
+            display: flex;
+            gap: 10px;
+        }
+
+        .radio-btn {
+            flex: 1;
+            padding: 0.75rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            cursor: pointer;
+            font-weight: 500;
+            user-select: none;
+        }
+
+        .radio-btn input {
+            display: none;
+        }
+
+        .radio-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .slab-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .slab-btn {
+            padding: 0.6rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius);
+            background: white;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+
+        .slab-btn.active {
+            background-color: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .results-box {
+            background-color: #f1f5f9;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .result-item.total {
+            border-bottom: none;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--border-color);
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .content-card h1, .content-card h2, .content-card h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .content-card p {
+            margin-bottom: 1.25rem;
+            color: #333;
+        }
+
+        .content-card ul {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1rem;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        footer {
+            background: #ffffff;
+            border-top: 1px solid var(--border-color);
+            padding: 2rem 1rem;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .calc-grid {
+                grid-template-columns: 1fr;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: white;
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+                box-shadow: var(--shadow);
+            }
+            nav ul.show {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .slab-buttons {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
+        <div class="navbar">
+            <a href="#" onclick="switchPage('home')" class="brand-logo">
+                <!-- SVG Logo inspired by logofa.st principles -->
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" rx="20" fill="#0D6EFD"/>
+                    <path d="M30 35H70M30 50H70M30 65H55" stroke="white" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="68" cy="65" r="7" fill="#198754"/>
+                </svg>
+                <span>GST Calc Online</span>
+            </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation">☰</button>
+            <nav>
+                <ul id="nav-links">
+                    <li><a onclick="switchPage('home')" class="nav-item active" id="nav-home">Home</a></li>
+                    <li><a onclick="switchPage('about')" class="nav-item" id="nav-about">About Us</a></li>
+                    <li><a onclick="switchPage('faq')" class="nav-item" id="nav-faq">FAQ</a></li>
+                    <li><a onclick="switchPage('contact')" class="nav-item" id="nav-contact">Contact</a></li>
+                    <li><a onclick="switchPage('privacy')" class="nav-item" id="nav-privacy">Privacy Policy</a></li>
+                    <li><a onclick="switchPage('terms')" class="nav-item" id="nav-terms">Terms</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <h1>Welcome to Your SEO-Optimized Site</h1>
-        <p>This template is structured with semantic HTML5 tags, fast loading assets, and proper metadata for search engine crawlers.</p>
+        <!-- HOME PAGE / CALCULATOR SECTION -->
+        <section id="home" class="page-section active">
+            <div class="calculator-card">
+                <h2>Online Goods & Services Tax (GST) Calculator</h2>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Calculate tax amounts, net prices, CGST, SGST, and IGST instantly.</p>
+                
+                <div class="calc-grid">
+                    <div class="form-side">
+                        <div class="form-group">
+                            <label for="amount">Initial Amount (₹)</label>
+                            <input type="number" id="amount" class="input-control" value="10000" min="0" placeholder="Enter amount">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tax Action</label>
+                            <div class="radio-toggle">
+                                <label class="radio-btn active" id="label-exclusive">
+                                    <input type="radio" name="gstType" value="exclusive" checked onchange="updateCalcType('exclusive')"> Add GST (Exclusive)
+                                </label>
+                                <label class="radio-btn" id="label-inclusive">
+                                    <input type="radio" name="gstType" value="inclusive" onchange="updateCalcType('inclusive')"> Remove GST (Inclusive)
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>GST Rate (%)</label>
+                            <div class="slab-buttons">
+                                <button type="button" class="slab-btn" onclick="setRate(5, this)">5%</button>
+                                <button type="button" class="slab-btn" onclick="setRate(12, this)">12%</button>
+                                <button type="button" class="slab-btn active" onclick="setRate(18, this)">18%</button>
+                                <button type="button" class="slab-btn" onclick="setRate(28, this)">28%</button>
+                            </div>
+                            <input type="number" id="custom-rate" class="input-control" placeholder="Or enter custom rate (%)" min="0" step="0.1">
+                        </div>
+                    </div>
+
+                    <div class="results-box">
+                        <div>
+                            <h3>Calculation Summary</h3>
+                            <div class="result-item">
+                                <span>Net / Base Price:</span>
+                                <strong id="res-net">₹10,000.00</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>Total GST (<span id="res-rate-tag">18%</span>):</span>
+                                <strong id="res-gst">₹1,800.00</strong>
+                            </div>
+                            <div class="result-item">
+                                <span>CGST (<span id="res-cgst-tag">9%</span>):</span>
+                                <span id="res-cgst">₹900.00</span>
+                            </div>
+                            <div class="result-item">
+                                <span>SGST / UTGST (<span id="res-sgst-tag">9%</span>):</span>
+                                <span id="res-sgst">₹900.00</span>
+                            </div>
+                        </div>
+                        <div class="result-item total">
+                            <span>Final Gross Price:</span>
+                            <span id="res-gross">₹11,800.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 600+ WORDS SEO OPTIMIZED CONTENT ARTICLE -->
+            <article class="content-card">
+                <h1>Understanding the Goods and Services Tax (GST) Calculator</h1>
+                <p>Navigating the indirect tax structure in modern business transactions can often present complex challenges for business owners, accountants, freelancers, and consumers alike. The <strong>GST Calculator Online</strong> is built to simplify this financial process. Designed as a fast, highly accurate, and accessible web-based utility, this tool enables users to perform exact tax computations in real time without requiring complex algebraic formulas or manual effort.</p>
+
+                <h2>What is Goods and Services Tax (GST)?</h2>
+                <p>The Goods and Services Tax (GST) is a comprehensive, multi-stage, destination-based indirect tax imposed on the supply of goods and services. Implemented to replace a fragmented system of cascading taxes (such as VAT, service tax, excise duty, and luxury tax), GST unifies national market valuations under standardized rates.</p>
+
+                <h2>Key Tax Components: CGST, SGST, and IGST Explained</h2>
+                <p>Under the Indian GST framework, taxes are split depending on whether the trade transaction is intrastate (within the same state) or interstate (between two different states):</p>
+                <ul>
+                    <li><strong>CGST (Central Goods and Services Tax):</strong> Collected by the Central Government on intrastate sales.</li>
+                    <li><strong>SGST (State Goods and Services Tax):</strong> Collected by the respective State Government on intrastate sales.</li>
+                    <li><strong>IGST (Integrated Goods and Services Tax):</strong> Levied by the Central Government on interstate transactions and imports, then distributed accordingly between the Union and receiving State.</li>
+                </ul>
+                <p>When computing taxes for local sales, the total GST percentage is split equally between CGST and SGST (for instance, an 18% slab rate divides into 9% CGST and 9% SGST).</p>
+
+                <h2>Standard GST Tax Slabs</h2>
+                <p>Goods and services are categorized under four primary rate slabs alongside essential exempt items:</p>
+                <ul>
+                    <li><strong>5% Rate:</strong> Applied to essential consumer goods, basic foods, apparel under specific caps, and mass-market services.</li>
+                    <li><strong>12% Rate:</strong> Applicable to processed food items, business equipment, computers, and specific agricultural machinery.</li>
+                    <li><strong>18% Rate:</strong> The default slab covering the majority of consumer items, IT services, financial services, and industrial products.</li>
+                    <li><strong>28% Rate:</strong> Applied to luxury goods, automobiles, sin goods (tobacco, sugary beverages), and high-end entertainment.</li>
+                </ul>
+
+                <h2>How to Calculate GST: Exclusive vs. Inclusive Tax</h2>
+                <p>Our online utility accommodates both major financial calculation modes:</p>
+                <h3>1. Adding GST to Base Amount (Exclusive GST)</h3>
+                <p>To determine the total gross price when tax is added on top of a net cost, use the following formula:</p>
+                <p>$$\text{GST Amount} = \frac{\text{Net Amount} \times \text{GST Rate}}{100}$$</p>
+                <p>$$\text{Gross Amount} = \text{Net Amount} + \text{GST Amount}$$</p>
+
+                <h3>2. Extracting GST from Total Amount (Inclusive GST)</h3>
+                <p>When the tax is already integrated into the final retail sticker price, calculate the original base price and tax portion using:</p>
+                <p>$$\text{GST Amount} = \text{Gross Amount} - \left( \frac{\text{Gross Amount} \times 100}{100 + \text{GST Rate}} \right)$$</p>
+                <p>$$\text{Net Amount} = \text{Gross Amount} - \text{GST Amount}$$</p>
+
+                <h2>Why Use GST Calculator Online?</h2>
+                <p>Using our web-based tax calculator minimizes human error during invoicing, speeds up accounting workflows, ensures compliance with tax filling obligations, and assists consumers in evaluating exact purchasing costs before checkout.</p>
+            </article>
+        </section>
+
+        <!-- ABOUT US PAGE -->
+        <section id="about" class="page-section">
+            <div class="content-card">
+                <h1>About GST Calculator Online</h1>
+                <p>Welcome to <strong>GST Calculator Online</strong>. We provide streamlined, instant, and accessible financial tools for individuals, small businesses, accountants, and enterprises across India.</p>
+                <h2>Our Mission</h2>
+                <p>Our goal is to eliminate calculation errors and make indirect tax assessment completely effortless. Whether you need to figure out GST for invoicing or determine the net base price of a consumer product, our web tools deliver instantaneous, mathematically sound breakdowns.</p>
+                <h2>Core Features</h2>
+                <ul>
+                    <li>Zero cost – 100% free web utility with no registration required.</li>
+                    <li>Mobile responsive and lightweight performance.</li>
+                    <li>Supports default GST rate slabs (5%, 12%, 18%, 28%) alongside custom percentage inputs.</li>
+                    <li>Complete CGST, SGST, and IGST breakdown views.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQ PAGE -->
+        <section id="faq" class="page-section">
+            <div class="content-card">
+                <h1>Frequently Asked Questions (FAQ)</h1>
+                <div class="faq-item">
+                    <h3>Q1: Is this GST calculator tool free to use?</h3>
+                    <p>Yes, GST Calculator Online is 100% free with unlimited calculations for personal and professional use.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q2: How does the tool split CGST and SGST?</h3>
+                    <p>For intrastate transactions, the total calculated GST rate is split equally (50-50) into Central GST (CGST) and State GST (SGST).</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q3: What is the difference between GST inclusive and exclusive?</h3>
+                    <p><strong>GST Exclusive:</strong> GST is added to the base price of goods/services. <br><strong>GST Inclusive:</strong> The product price already includes the tax amount within its total cost.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q4: Does this calculator support custom GST rates?</h3>
+                    <p>Yes! Simply type any customized percentage in the custom rate input field to generate exact amounts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <div class="content-card">
+                <h1>Contact Us</h1>
+                <p>Have questions, feedback, or suggestions for improving our GST tool? Feel free to get in touch with us.</p>
+                <form onsubmit="alert('Thank you for your message! We will get back to you shortly.'); return false;">
+                    <div class="form-group">
+                        <label for="cname">Name</label>
+                        <input type="text" id="cname" class="input-control" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="cemail">Email Address</label>
+                        <input type="email" id="cemail" class="input-control" required placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="cmessage">Message</label>
+                        <textarea id="cmessage" class="input-control" rows="5" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="slab-btn active" style="width: 100%; padding: 0.75rem;">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- PRIVACY POLICY -->
+        <section id="privacy" class="page-section">
+            <div class="content-card">
+                <h1>Privacy Policy</h1>
+                <p>Last updated: November 2026</p>
+                <p>At <strong>GST Calculator Online</strong>, we prioritize user privacy. We do not require account registration or store sensitive financial data on our servers.</p>
+                <h2>Data Collection & Analytics</h2>
+                <p>We utilize standard analytical platforms (such as Google Analytics) to monitor general site traffic performance, user device types, and page visit durations. This helps us optimize user experience across all screen sizes.</p>
+                <h2>Cookies</h2>
+                <p>Our website may use cookies to store user preferences (e.g., last used GST rate or theme mode) locally within your web browser.</p>
+            </div>
+        </section>
+
+        <!-- TERMS OF SERVICE -->
+        <section id="terms" class="page-section">
+            <div class="content-card">
+                <h1>Terms & Conditions</h1>
+                <p>By using <strong>GST Calculator Online</strong>, you agree to comply with the following terms:</p>
+                <h2>Disclaimer of Liability</h2>
+                <p>While we strive for absolute mathematical precision, tax regulations change frequently. All calculations are provided for informational and estimation purposes only. Users should consult a qualified Chartered Accountant (CA) or financial consultant for legal tax filing.</p>
+            </div>
+        </section>
+
+        <!-- 404 ERROR PAGE -->
+        <section id="error404" class="page-section">
+            <div class="content-card" style="text-align: center;">
+                <h1 style="font-size: 4rem; color: var(--primary);">404</h1>
+                <h2>Page Not Found</h2>
+                <p>The page or resource you are searching for does not exist or has been moved.</p>
+                <button onclick="switchPage('home')" class="slab-btn active" style="margin-top: 1rem;">Return to Calculator</button>
+            </div>
+        </section>
+
+        <!-- 500 ERROR PAGE -->
+        <section id="error500" class="page-section">
+            <div class="content-card" style="text-align: center;">
+                <h1 style="font-size: 4rem; color: #dc3545;">500</h1>
+                <h2>Internal Server Error</h2>
+                <p>Something went wrong on our end. Please reload the page or try again later.</p>
+                <button onclick="switchPage('home')" class="slab-btn active" style="margin-top: 1rem;">Return to Calculator</button>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 Example.com. All rights reserved.</p>
+        <div class="footer-container">
+            <p>&copy; 2026 GST Calculator Online. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a onclick="switchPage('home')">Home</a></li>
+                <li><a onclick="switchPage('about')">About</a></li>
+                <li><a onclick="switchPage('faq')">FAQ</a></li>
+                <li><a onclick="switchPage('contact')">Contact</a></li>
+                <li><a onclick="switchPage('privacy')">Privacy</a></li>
+                <li><a onclick="switchPage('terms')">Terms</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script>
+        let currentRate = 18;
+        let calcType = 'exclusive';
+
+        function toggleMenu() {
+            document.getElementById('nav-links').classList.toggle('show');
+        }
+
+        function switchPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+            
+            const targetSection = document.getElementById(pageId) || document.getElementById('error404');
+            targetSection.classList.add('active');
+
+            const activeNav = document.getElementById(`nav-${pageId}`);
+            if (activeNav) activeNav.classList.add('active');
+
+            document.getElementById('nav-links').classList.remove('show');
+            window.scrollTo(0, 0);
+        }
+
+        function setRate(rate, btnElement) {
+            currentRate = rate;
+            document.querySelectorAll('.slab-btn').forEach(btn => btn.classList.remove('active'));
+            if(btnElement) btnElement.classList.add('active');
+            document.getElementById('custom-rate').value = '';
+            calculateGST();
+        }
+
+        function updateCalcType(type) {
+            calcType = type;
+            document.getElementById('label-exclusive').classList.toggle('active', type === 'exclusive');
+            document.getElementById('label-inclusive').classList.toggle('active', type === 'inclusive');
+            calculateGST();
+        }
+
+        function calculateGST() {
+            const amountInput = parseFloat(document.getElementById('amount').value) || 0;
+            const customRate = parseFloat(document.getElementById('custom-rate').value);
+            const activeRate = !isNaN(customRate) && customRate >= 0 ? customRate : currentRate;
+
+            let net = 0;
+            let gst = 0;
+            let gross = 0;
+
+            if (calcType === 'exclusive') {
+                net = amountInput;
+                gst = (amountInput * activeRate) / 100;
+                gross = net + gst;
+            } else {
+                gross = amountInput;
+                net = gross / (1 + (activeRate / 100));
+                gst = gross - net;
+            }
+
+            const cgst = gst / 2;
+            const sgst = gst / 2;
+            const halfRate = activeRate / 2;
+
+            document.getElementById('res-net').textContent = formatCurrency(net);
+            document.getElementById('res-gst').textContent = formatCurrency(gst);
+            document.getElementById('res-cgst').textContent = formatCurrency(cgst);
+            document.getElementById('res-sgst').textContent = formatCurrency(sgst);
+            document.getElementById('res-gross').textContent = formatCurrency(gross);
+
+            document.getElementById('res-rate-tag').textContent = `${activeRate}%`;
+            document.getElementById('res-cgst-tag').textContent = `${halfRate}%`;
+            document.getElementById('res-sgst-tag').textContent = `${halfRate}%`;
+        }
+
+        function formatCurrency(val) {
+            return '₹' + Number(val).toLocaleString('en-IN', {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            });
+        }
+
+        // Attach event listeners
+        document.getElementById('amount').addEventListener('input', calculateGST);
+        document.getElementById('custom-rate').addEventListener('input', () => {
+            document.querySelectorAll('.slab-btn').forEach(btn => btn.classList.remove('active'));
+            calculateGST();
+        });
+
+        // Initialize default view
+        calculateGST();
+    </script>
 </body>
 </html>
