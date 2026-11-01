@@ -1,4 +1,7 @@
 User-agent: *
+
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+
+
+Sitemap: https://gstcalculatoronline.github.io/sitemap.xml
