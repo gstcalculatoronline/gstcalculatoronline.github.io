@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GST Inclusive vs Exclusive – Difference, Formula & Examples</title>
+
+    <meta name="description" content="Understand GST inclusive vs exclusive prices with simple formulas and examples. Learn how to add GST or remove GST from an amount in India.">
+
+    <meta name="keywords" content="GST inclusive vs exclusive, GST inclusive price, GST exclusive price, remove GST from amount, GST calculation formula, GST calculator India">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://gstcalculatoronline.github.io/blog/gst-inclusive-vs-exclusive.html">
+
+    <meta property="og:title" content="GST Inclusive vs Exclusive – Difference, Formula & Examples">
+    <meta property="og:description" content="Learn the difference between GST inclusive and exclusive prices with formulas and practical examples.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://gstcalculatoronline.github.io/blog/gst-inclusive-vs-exclusive.html">
+    <meta property="og:site_name" content="GST Calculator Online">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="GST Inclusive vs Exclusive">
+    <meta name="twitter:description" content="Understand GST inclusive and exclusive calculations with simple examples.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #263445;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #075985;
+            padding: 18px 20px;
+            color: white;
+        }
+
+        .header-inner {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 {
+            color: #075985;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 34px;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-top: 35px;
+        }
+
+        p {
+            margin: 15px 0;
+        }
+
+        a {
+            color: #0284c7;
+            font-weight: 600;
+        }
+
+        .formula {
+            background: #eff6ff;
+            border-left: 4px solid #0284c7;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow-wrap: anywhere;
+        }
+
+        .example {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #e0f2fe;
+        }
+
+        .cta {
+            background: #075985;
+            color: white;
+            padding: 22px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: white;
+            color: #075985;
+            padding: 10px 22px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #e2e8f0;
+            color: #475569;
+        }
+
+        @media(max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "GST Inclusive vs Exclusive – Difference, Formula & Examples",
+        "description": "Understand GST inclusive and exclusive prices with simple formulas and examples.",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://gstcalculatoronline.github.io/blog/gst-inclusive-vs-exclusive.html"
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "GST Calculator Online"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "GST Calculator Online",
+            "url": "https://gstcalculatoronline.github.io/"
+        },
+        "datePublished": "2026-11-05",
+        "dateModified": "2026-11-05"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://gstcalculatoronline.github.io/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://gstcalculatoronline.github.io/blog/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "GST Inclusive vs Exclusive",
+                "item": "https://gstcalculatoronline.github.io/blog/gst-inclusive-vs-exclusive.html"
+            }
+        ]
+    }
+    </script>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <a href="https://gstcalculatoronline.github.io/">
+            GST Calculator Online
+        </a>
+    </div>
+</header>
+
+<main class="container">
+<article>
+
+    <h1>GST Inclusive vs Exclusive – Difference, Formula & Calculation Examples</h1>
+
+    <p>
+        When purchasing products or services in India, you may see prices
+        displayed with or without Goods and Services Tax (GST). These are
+        known as GST-inclusive and GST-exclusive prices.
+    </p>
+
+    <p>
+        Understanding the difference between GST inclusive and exclusive
+        amounts is important for customers, retailers, business owners,
+        freelancers and accountants.
+    </p>
+
+    <p>
+        In this guide, you will learn the difference, calculation formulas
+        and practical examples to calculate GST accurately.
+    </p>
+
+    <div class="cta">
+        <h2>Calculate GST Online for Free</h2>
+        <p>
+            Add GST or remove GST from any amount using our easy online calculator.
+        </p>
+        <a href="https://gstcalculatoronline.github.io/"
+           title="GST Calculator Online">
+            Use GST Calculator
+        </a>
+    </div>
+
+    <h2>What Is GST Exclusive Price?</h2>
+
+    <p>
+        A GST-exclusive price is the original price of a product or service
+        before adding GST. The applicable GST amount is calculated separately
+        and added to the original price.
+    </p>
+
+    <p>For example:</p>
+
+    <ul>
+        <li>Product price: ₹1,000</li>
+        <li>GST rate: 18%</li>
+        <li>GST amount: ₹180</li>
+        <li>Final price: ₹1,180</li>
+    </ul>
+
+    <p>
+        Here, ₹1,000 is the GST-exclusive price because GST has not yet
+        been added.
+    </p>
+
+    <h2>What Is GST Inclusive Price?</h2>
+
+    <p>
+        A GST-inclusive price is the final price of a product or service
+        after GST has already been included. The displayed amount contains
+        both the original taxable value and the GST component.
+    </p>
+
+    <p>For example:</p>
+
+    <ul>
+        <li>Original price: ₹1,000</li>
+        <li>GST amount: ₹180</li>
+        <li>GST-inclusive price: ₹1,180</li>
+    </ul>
+
+    <p>
+        Here, ₹1,180 is the GST-inclusive price because it already
+        includes 18% GST.
+    </p>
+
+    <h2>Difference Between GST Inclusive and Exclusive</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>GST Inclusive</th>
+                <th>GST Exclusive</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Meaning</td>
+                <td>Price includes GST</td>
+                <td>Price excludes GST</td>
+            </tr>
+            <tr>
+                <td>GST status</td>
+                <td>Already included</td>
+                <td>Not yet added</td>
+            </tr>
+            <tr>
+                <td>Calculation</td>
+                <td>Extract GST</td>
+                <td>Add GST</td>
+            </tr>
+            <tr>
+                <td>Price example</td>
+                <td>₹1,180</td>
+                <td>₹1,000</td>
+            </tr>
+            <tr>
+                <td>Final amount</td>
+                <td>Displayed amount</td>
+                <td>Original price + GST</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>GST Exclusive Calculation Formula</h2>
+
+    <p>
+        To calculate GST on an exclusive price, multiply the original
+        taxable amount by the applicable GST percentage and divide by 100.
+    </p>
+
+    <div class="formula">
+        <strong>GST Amount = Original Price × GST Rate ÷ 100</strong>
+        <br><br>
+        <strong>Inclusive Price = Original Price + GST Amount</strong>
+    </div>
+
+    <h3>Example of GST Exclusive Calculation</h3>
+
+    <p>
+        Suppose a product costs ₹5,000 before GST and the applicable
+        GST rate is 18%.
+    </p>
+
+    <div class="example">
+        Original Price = ₹5,000<br>
+        GST Rate = 18%<br><br>
+        GST = 5,000 × 18 ÷ 100<br>
+        GST = ₹900<br><br>
+        Final Price = 5,000 + 900<br>
+        <strong>GST Inclusive Price = ₹5,900</strong>
+    </div>
+
+    <h2>GST Inclusive Calculation Formula</h2>
+
+    <p>
+        If the displayed amount already includes GST, you need to extract
+        the GST component to find the original taxable value.
+    </p>
+
+    <div class="formula">
+        <strong>
+            GST Amount = Inclusive Price × GST Rate ÷ (100 + GST Rate)
+        </strong>
+        <br><br>
+        <strong>
+            Original Price = Inclusive Price × 100 ÷ (100 + GST Rate)
+        </strong>
+    </div>
+
+    <h3>Example of GST Inclusive Calculation</h3>
+
+    <p>
+        Suppose a product costs ₹5,900, including 18% GST.
+        Let's calculate the original price and GST amount.
+    </p>
+
+    <div class="example">
+        Inclusive Price = ₹5,900<br>
+        GST Rate = 18%<br><br>
+        GST = 5,900 × 18 ÷ 118<br>
+        GST = ₹900<br><br>
+        Original Price = 5,900 − 900<br>
+        <strong>GST Exclusive Price = ₹5,000</strong>
+    </div>
+
+    <h2>GST Inclusive vs Exclusive Examples</h2>
+
+    <p>
+        The following table shows how GST is calculated on an
+        exclusive taxable amount using different example rates.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Original Price</th>
+                <th>GST Rate</th>
+                <th>GST Amount</th>
+                <th>Final Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>₹1,000</td>
+                <td>5%</td>
+                <td>₹50</td>
+                <td>₹1,050</td>
+            </tr>
+            <tr>
+                <td>₹1,000</td>
+                <td>12%</td>
+                <td>₹120</td>
+                <td>₹1,120</td>
+            </tr>
+            <tr>
+                <td>₹1,000</td>
+                <td>18%</td>
+                <td>₹180</td>
+                <td>₹1,180</td>
+            </tr>
+            <tr>
+                <td>₹1,000</td>
+                <td>40%</td>
+                <td>₹400</td>
+                <td>₹1,400</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        These are mathematical examples. Always check the current applicable
+        GST rate for the specific goods or services before calculating tax.
+    </p>
+
+    <h2>How to Remove GST From an Amount</h2>
+
+    <p>
+        If you receive an invoice or see a product price that already
+        includes GST, you can calculate the original taxable value
+        by removing the GST component.
+    </p>
+
+    <ol>
+        <li>Enter the GST-inclusive amount.</li>
+        <li>Identify the applicable GST percentage.</li>
+        <li>Divide the amount by 100 plus the GST rate.</li>
+        <li>Multiply by 100 to find the original taxable value.</li>
+        <li>Subtract the taxable value from the inclusive amount to find GST.</li>
+    </ol>
+
+    <h3>Example: Remove 18% GST From ₹2,360</h3>
+
+    <div class="example">
+        Inclusive Amount = ₹2,360<br>
+        GST Rate = 18%<br><br>
+        Taxable Value = 2,360 × 100 ÷ 118<br>
+        Taxable Value = ₹2,000<br><br>
+        GST Amount = 2,360 − 2,000<br>
+        <strong>GST Amount = ₹360</strong>
+    </div>
+
+    <h2>When Should You Use GST Inclusive and Exclusive Calculations?</h2>
+
+    <h3>GST Exclusive Calculation Is Useful When:</h3>
+
+    <ul>
+        <li>Preparing business quotations.</li>
+        <li>Creating invoices before adding GST.</li>
+        <li>Calculating GST on product prices.</li>
+        <li>Finding the final customer payment.</li>
+        <li>Estimating tax on taxable goods and services.</li>
+    </ul>
+
+    <h3>GST Inclusive Calculation Is Useful When:</h3>
+
+    <ul>
+        <li>Extracting GST from a final invoice amount.</li>
+        <li>Checking the taxable value of a purchase.</li>
+        <li>Calculating the GST component of a retail price.</li>
+        <li>Verifying billing calculations.</li>
+        <li>Separating tax from a GST-inclusive quotation.</li>
+    </ul>
+
+    <h2>Benefits of Using an Online GST Calculator</h2>
+
+    <p>
+        Manual GST calculations can take time, especially when dealing
+        with multiple products, invoices and different tax rates.
+        An online GST calculator makes the process faster and easier.
+    </p>
+
+    <p>Using an online GST calculator, you can:</p>
+
+    <ul>
+        <li>Add GST to an original amount.</li>
+        <li>Remove GST from an inclusive amount.</li>
+        <li>Calculate GST at different percentages.</li>
+        <li>Find the original taxable value.</li>
+        <li>Calculate the final price after GST.</li>
+        <li>Reduce manual calculation errors.</li>
+    </ul>
+
+    <div class="cta">
+        <h2>Try Our Free GST Calculator Online</h2>
+        <p>
+            Calculate GST-inclusive and GST-exclusive amounts quickly
+            without complicated manual calculations.
+        </p>
+        <a href="https://gstcalculatoronline.github.io/"
+           title="Calculate GST Online">
+            Calculate GST Now
+        </a>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>1. What is the difference between GST inclusive and exclusive?</h3>
+
+    <p>
+        GST inclusive means the price already contains GST, whereas
+        GST exclusive means GST has not yet been added to the original price.
+    </p>
+
+    <h3>2. How do I calculate GST inclusive price?</h3>
+
+    <p>
+        Multiply the original price by the GST rate divided by 100.
+        Then add the GST amount to the original price.
+    </p>
+
+    <h3>3. How do I remove 18% GST from an amount?</h3>
+
+    <p>
+        Divide the GST-inclusive amount by 118 and multiply by 100
+        to calculate the original taxable value. Subtract that value
+        from the inclusive amount to find GST.
+    </p>
+
+    <h3>4. Does GST inclusive mean tax is already paid?</h3>
+
+    <p>
+        It means GST is included in the displayed price. Whether it
+        has been properly charged, invoiced and paid to the government
+        depends on the actual transaction and tax compliance.
+    </p>
+
+    <h3>5. Is GST calculated on the inclusive or exclusive price?</h3>
+
+    <p>
+        GST is generally calculated on the applicable taxable value.
+        If the displayed amount already includes GST, use the inclusive
+        formula to extract the tax component.
+    </p>
+
+    <h3>6. Can I calculate GST inclusive and exclusive amounts online?</h3>
+
+    <p>
+        Yes. Use our free
+        <a href="https://gstcalculatoronline.github.io/"
+           title="GST Calculator Online">
+            GST Calculator Online
+        </a>
+        to add or remove GST from amounts quickly.
+    </p>
+
+    <h2>Conclusion</h2>
+
+    <p>
+        GST inclusive and exclusive prices are two important concepts
+        in everyday business transactions. Knowing the correct formulas
+        helps you calculate the original taxable value, GST amount
+        and final price accurately.
+    </p>
+
+    <p>
+        Whether you are a customer, retailer, freelancer or business owner,
+        understanding these calculations can make invoice verification
+        and price calculations easier.
+    </p>
+
+    <p>
+        Visit
+        <a href="https://gstcalculatoronline.github.io/"
+           title="GST Calculator Online – Free GST Calculator">
+            GST Calculator Online
+        </a>
+        to calculate GST-inclusive and GST-exclusive amounts quickly
+        and simplify your everyday calculations.
+    </p>
+
+</article>
+</main>
+
+<footer>
+    <p>
+        © 2026
+        <a href="https://gstcalculatoronline.github.io/">
+            GST Calculator Online
+        </a>.
+        All rights reserved.
+    </p>
+</footer>
+
+</body>
+</html>
